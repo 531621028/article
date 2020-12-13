@@ -10,7 +10,6 @@
 
 ## 2.http的方式
 
-1. 使用```git config --global --unset credential.helper```去除掉全局的密码管理配置
 2. 在github上使用AccountOne账号上创建一个远程仓库名称为repoOne,对应的http的链接应该是 https://github.com/AccountOne/repoOne.git
 3. 在本地clone下刚刚创建的仓库,使用```git remote set-url origin https://AccountOne@github.com/AccountOne/repoOne.git```设置远程仓库的地址，**注意在域名的前面添加了AccountOne@**目的是指定不同的用户
 4. 在本地执行```git push -u origin main```的时候会要求输入密码，输入密码之后就可以吧代码push上去了
